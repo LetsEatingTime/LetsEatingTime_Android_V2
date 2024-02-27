@@ -14,4 +14,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "LetsEatingTime"
-include(":app")
+include(":app", ":database", ":main", ":di", ":network", ":auth")
