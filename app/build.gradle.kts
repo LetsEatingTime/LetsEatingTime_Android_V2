@@ -39,21 +39,17 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
-    }
     packaging {
         resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "META-INF/gradle/incremental.annotation.processors"
         }
     }
 }
 
 dependencies {
     implementation(project(":database"))
+    implementation(project(":auth"))
+
 
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.material3)
