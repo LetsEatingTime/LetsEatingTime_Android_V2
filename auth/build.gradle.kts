@@ -53,6 +53,7 @@ dependencies {
     implementation(project(":di"))
     implementation(project(":network"))
     implementation(project(":database"))
+    implementation(project(":main"))
 
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.material3)
