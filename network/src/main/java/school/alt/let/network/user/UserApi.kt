@@ -16,7 +16,7 @@ interface UserApi {
     fun image(
         @Header("Authorization") accessToken: String,
         @Path(value = "idx") idx: String
-    ): ResponseBody
+    ): ByteArray
 
     @GET("/api/user/profile")
     fun profile(

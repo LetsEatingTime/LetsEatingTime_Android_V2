@@ -8,7 +8,7 @@ import javax.inject.Inject
 class UserApiRepositoryImpl @Inject constructor(
     private val userApi: UserApi
 ) : UserRepository {
-    override suspend fun image(accessToken: String, idx: String): ResponseBody {
+    override suspend fun image(accessToken: String, idx: String): ByteArray {
         return userApi.image(accessToken,idx)
     }
 
